@@ -12,6 +12,11 @@
 		43A2DD482CB517CF002C41BE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A2DD472CB517CF002C41BE /* Item.swift */; };
 		43A2DD4A2CB517D0002C41BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A2DD492CB517D0002C41BE /* Assets.xcassets */; };
 		43A2DD4D2CB517D0002C41BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A2DD4C2CB517D0002C41BE /* Preview Assets.xcassets */; };
+		43A2DD542CB5195E002C41BE /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A2DD532CB5195E002C41BE /* QuestionListView.swift */; };
+		43A2DD562CB51B06002C41BE /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A2DD552CB51B06002C41BE /* QuizView.swift */; };
+		43A2DD592CB51F2B002C41BE /* AddQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A2DD582CB51F2B002C41BE /* AddQuestionView.swift */; };
+		43B8803C2CB555AA00F27A3B /* CardFrontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8803B2CB555AA00F27A3B /* CardFrontView.swift */; };
+		43B8803E2CB55D5A00F27A3B /* CardBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8803D2CB55D5A00F27A3B /* CardBackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +26,11 @@
 		43A2DD472CB517CF002C41BE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		43A2DD492CB517D0002C41BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43A2DD4C2CB517D0002C41BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43A2DD532CB5195E002C41BE /* QuestionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
+		43A2DD552CB51B06002C41BE /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		43A2DD582CB51F2B002C41BE /* AddQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionView.swift; sourceTree = "<group>"; };
+		43B8803B2CB555AA00F27A3B /* CardFrontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFrontView.swift; sourceTree = "<group>"; };
+		43B8803D2CB55D5A00F27A3B /* CardBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				43A2DD432CB517CF002C41BE /* FlashCardAppApp.swift */,
-				43A2DD452CB517CF002C41BE /* ContentView.swift */,
+				43A2DD572CB51EF7002C41BE /* Views */,
 				43A2DD472CB517CF002C41BE /* Item.swift */,
 				43A2DD492CB517D0002C41BE /* Assets.xcassets */,
 				43A2DD4B2CB517D0002C41BE /* Preview Content */,
@@ -68,6 +78,19 @@
 				43A2DD4C2CB517D0002C41BE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		43A2DD572CB51EF7002C41BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43A2DD452CB517CF002C41BE /* ContentView.swift */,
+				43A2DD532CB5195E002C41BE /* QuestionListView.swift */,
+				43A2DD582CB51F2B002C41BE /* AddQuestionView.swift */,
+				43A2DD552CB51B06002C41BE /* QuizView.swift */,
+				43B8803B2CB555AA00F27A3B /* CardFrontView.swift */,
+				43B8803D2CB55D5A00F27A3B /* CardBackView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A2DD542CB5195E002C41BE /* QuestionListView.swift in Sources */,
 				43A2DD462CB517CF002C41BE /* ContentView.swift in Sources */,
+				43A2DD592CB51F2B002C41BE /* AddQuestionView.swift in Sources */,
+				43B8803E2CB55D5A00F27A3B /* CardBackView.swift in Sources */,
+				43A2DD562CB51B06002C41BE /* QuizView.swift in Sources */,
+				43B8803C2CB555AA00F27A3B /* CardFrontView.swift in Sources */,
 				43A2DD482CB517CF002C41BE /* Item.swift in Sources */,
 				43A2DD442CB517CF002C41BE /* FlashCardAppApp.swift in Sources */,
 			);

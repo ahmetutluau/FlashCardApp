@@ -27,6 +27,7 @@ struct FlashCardAppApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(sharedModelContainer)
+//        .modelContainer(sharedModelContainer)
+        .modelContainer(for: Item.self)
     }
 }
