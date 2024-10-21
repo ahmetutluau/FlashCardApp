@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4355EF722CC69B19002CA697 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4355EF712CC69B19002CA697 /* CoordinatorView.swift */; };
+		4355EF742CC69B43002CA697 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4355EF732CC69B43002CA697 /* Coordinator.swift */; };
+		4355EF782CC69BE7002CA697 /* AppPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4355EF772CC69BE7002CA697 /* AppPages.swift */; };
 		43A2DD442CB517CF002C41BE /* FlashCardAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A2DD432CB517CF002C41BE /* FlashCardAppApp.swift */; };
 		43A2DD462CB517CF002C41BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A2DD452CB517CF002C41BE /* ContentView.swift */; };
 		43A2DD482CB517CF002C41BE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A2DD472CB517CF002C41BE /* Item.swift */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4355EF712CC69B19002CA697 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		4355EF732CC69B43002CA697 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4355EF772CC69BE7002CA697 /* AppPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPages.swift; sourceTree = "<group>"; };
 		43A2DD402CB517CF002C41BE /* FlashCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A2DD432CB517CF002C41BE /* FlashCardAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardAppApp.swift; sourceTree = "<group>"; };
 		43A2DD452CB517CF002C41BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +50,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4355EF702CC69B04002CA697 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4355EF712CC69B19002CA697 /* CoordinatorView.swift */,
+				4355EF732CC69B43002CA697 /* Coordinator.swift */,
+				4355EF772CC69BE7002CA697 /* AppPages.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		43A2DD372CB517CF002C41BE = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +79,7 @@
 		43A2DD422CB517CF002C41BE /* FlashCardApp */ = {
 			isa = PBXGroup;
 			children = (
+				4355EF702CC69B04002CA697 /* Coordinator */,
 				43A2DD432CB517CF002C41BE /* FlashCardAppApp.swift */,
 				43A2DD572CB51EF7002C41BE /* Views */,
 				43A2DD472CB517CF002C41BE /* Item.swift */,
@@ -164,9 +181,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A2DD542CB5195E002C41BE /* QuestionListView.swift in Sources */,
+				4355EF722CC69B19002CA697 /* CoordinatorView.swift in Sources */,
+				4355EF742CC69B43002CA697 /* Coordinator.swift in Sources */,
 				43A2DD462CB517CF002C41BE /* ContentView.swift in Sources */,
 				43A2DD592CB51F2B002C41BE /* AddQuestionView.swift in Sources */,
 				43B8803E2CB55D5A00F27A3B /* CardBackView.swift in Sources */,
+				4355EF782CC69BE7002CA697 /* AppPages.swift in Sources */,
 				43A2DD562CB51B06002C41BE /* QuizView.swift in Sources */,
 				43B8803C2CB555AA00F27A3B /* CardFrontView.swift in Sources */,
 				43A2DD482CB517CF002C41BE /* Item.swift in Sources */,

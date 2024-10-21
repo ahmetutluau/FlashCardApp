@@ -9,12 +9,26 @@ import SwiftUI
 import SwiftData
 
 struct QuestionListView: View {
+    @EnvironmentObject private var coordinator: Coordinator
+    
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
     @State var showAddQuestionView: Bool = false
-
+    
     var body: some View {
-        NavigationSplitView {
+        VStack {
+            HStack(content: {
+                Spacer()
+                
+                EditButton()
+                
+                Button(action: {
+                    coordinator.presentSheet(.addQuestion)
+                }) {
+                    Image(systemName: "plus")
+                }
+                .padding(.horizontal)
+            })
             List {
                 ForEach(items) { item in
                     Text("\(item.question)")
@@ -24,25 +38,10 @@ struct QuestionListView: View {
                 }
                 .onDelete(perform: deleteItems)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: {showAddQuestionView = true}) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
         }
-        .navigationTitle("Questions")
-        .sheet(isPresented: $showAddQuestionView, content: {
-            AddQuestionView()
-        })
+        
     }
-
+    
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
             for index in offsets {
@@ -71,14 +70,14 @@ class PreviewDataController {
             
             for index in 0..<4 {
                 let todoItem = Item(question: todoItemTitles[index].question,
-                                answer: todoItemTitles[index].answer)
+                                    answer: todoItemTitles[index].answer)
                 container.mainContext.insert(todoItem)
             }
             
             return container
-
-            } catch {
-                fatalError("Unable to initialize a container for previews.")
-            }
+            
+        } catch {
+            fatalError("Unable to initialize a container for previews.")
+        }
     }()
 }

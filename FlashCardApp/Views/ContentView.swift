@@ -9,25 +9,24 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    
+
     var body: some View {
-        ZStack {
-            TabView {
-                QuestionListView()
-                    .tabItem {
-                        Label("Question List", systemImage: "list.dash")
-                    }
-                
-                QuizView()
-                    .tabItem {
-                        Label("Quiz", systemImage: "questionmark")
-                    }
-            }
+        TabView {
+            QuestionListView()
+                .tabItem {
+                    Label("Question List", systemImage: "list.dash")
+                }
+            
+            QuizView()
+                .tabItem {
+                    Label("Quiz", systemImage: "questionmark")
+                }
         }
     }
 }
 
 #Preview {
     ContentView()
+        .modelContainer(PreviewDataController.container)
         
 }
