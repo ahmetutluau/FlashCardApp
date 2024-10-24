@@ -94,7 +94,7 @@ struct QuizView: View {
 
 #Preview {
     QuizView()
-        .modelContainer(PreviewDataController.container)
+        .modelContainer(previewContainer)
 }
 
 

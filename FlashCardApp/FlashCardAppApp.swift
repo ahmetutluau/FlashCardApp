@@ -14,6 +14,6 @@ struct FlashCardAppApp: App {
         WindowGroup {
             CoordinatorView()
         }
-        .modelContainer(for: Item.self)
+        .modelContainer(for: Category.self)
     }
 }

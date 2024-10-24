@@ -12,7 +12,7 @@ struct ContentView: View {
 
     var body: some View {
         TabView {
-            QuestionListView()
+            HomeScreen()
                 .tabItem {
                     Label("Question List", systemImage: "list.dash")
                 }
@@ -27,6 +27,6 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(PreviewDataController.container)
+        .modelContainer(previewContainer)
         
 }

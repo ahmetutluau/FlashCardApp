@@ -8,27 +8,43 @@
 import SwiftUI
 import SwiftData
 
-struct AddQuestionView: View {
+enum Categories: String, CaseIterable, Identifiable {
+    case Language , Movies, Science, Mathematics, History, Geography, Music, Art, Literature, Technology
+    var id: Self { self }
+}
+
+struct AddDeckScreen: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
     @State var questionString = ""
     @State var answerString = ""
     @Environment(\.dismiss) var dismiss
     
+    @State private var skipCategory: Bool = false
+    
+    @State private var selectedCategory: Categories = .Language
+    @EnvironmentObject private var coordinator: Coordinator
+    
     var body: some View {
         Form {
-            Section("Question") {
+            Section("Name") {
                 HStack {
                     TextField("Type your question here", text: $questionString)
                     Text("*").foregroundStyle(.red)
                 }
             }
             
-            Section("Answer") {
-                HStack {
-                    TextField("Type your answer here", text: $answerString)
-                    Text("*").foregroundStyle(.red)
-                }
+            Section("Category(Optional)") {
+                VStack(alignment: .leading, content: {
+                    Toggle("Skip", isOn: $skipCategory)
+                                        
+                    Picker(selection: $selectedCategory, label: Text("Select Category").foregroundColor(skipCategory ? .gray : .black)) {
+                        ForEach(Categories.allCases) { category in
+                            Text(category.rawValue.capitalized)
+                        }
+                    }
+                            
+                })
             }
             
             Section {
@@ -86,5 +102,5 @@ struct AddQuestionView: View {
 }
 
 #Preview {
-    AddQuestionView()
+    AddDeckScreen()
 }

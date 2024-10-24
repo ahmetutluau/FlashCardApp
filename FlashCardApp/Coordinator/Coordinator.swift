@@ -52,7 +52,7 @@ class Coordinator: ObservableObject {
     func buildSheet(sheet: Sheet) -> some View {
         switch sheet {
         case .addQuestion:
-                AddQuestionView()
+                AddDeckScreen()
         }
     }
     
