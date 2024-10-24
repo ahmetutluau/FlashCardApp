@@ -14,6 +14,8 @@ enum Categories: String, CaseIterable, Identifiable {
 }
 
 struct AddDeckScreen: View {
+    @EnvironmentObject private var coordinator: Coordinator
+
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
     @State var questionString = ""
@@ -23,7 +25,7 @@ struct AddDeckScreen: View {
     @State private var skipCategory: Bool = false
     
     @State private var selectedCategory: Categories = .Language
-    @EnvironmentObject private var coordinator: Coordinator
+    @State var isAddNewCategoryPresented: Bool = false
     
     var body: some View {
         Form {
@@ -38,14 +40,32 @@ struct AddDeckScreen: View {
                 VStack(alignment: .leading, content: {
                     Toggle("Skip", isOn: $skipCategory)
                                         
+                    Spacer()
+                    
                     Picker(selection: $selectedCategory, label: Text("Select Category").foregroundColor(skipCategory ? .gray : .black)) {
                         ForEach(Categories.allCases) { category in
                             Text(category.rawValue.capitalized)
                         }
                     }
-                            
+                    
+                    
+                    Spacer()
+                    
+                    Button(action: {
+//                        coordinator.presentSheet(.addNewCategory)
+                        isAddNewCategoryPresented = true
+                    }, label: {
+                        Text("Add new category")
+                    })
+                    .buttonStyle(BorderlessButtonStyle())                    .disabled(skipCategory)
+                    .sheet(isPresented: $isAddNewCategoryPresented, content: {
+                        AddNewCategoryScreen()
+                            .presentationDetents([.medium])
+                    })
+                    
                 })
             }
+            .buttonStyle(BorderlessButtonStyle())
             
             Section {
                 HStack {

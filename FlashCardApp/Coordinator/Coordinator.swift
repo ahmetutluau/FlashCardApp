@@ -53,6 +53,8 @@ class Coordinator: ObservableObject {
         switch sheet {
         case .addQuestion:
                 AddDeckScreen()
+        case .addNewCategory:
+            AddNewCategoryScreen()
         }
     }
     

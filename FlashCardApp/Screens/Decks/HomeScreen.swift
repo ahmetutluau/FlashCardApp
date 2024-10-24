@@ -65,4 +65,5 @@ struct HomeScreen: View {
 #Preview {
     HomeScreen()
         .modelContainer(previewContainer)
+        .environmentObject(Coordinator())
 }

@@ -20,6 +20,7 @@
 		43A2DD542CB5195E002C41BE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A2DD532CB5195E002C41BE /* HomeScreen.swift */; };
 		43A2DD562CB51B06002C41BE /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A2DD552CB51B06002C41BE /* QuizView.swift */; };
 		43A2DD592CB51F2B002C41BE /* AddDeckScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A2DD582CB51F2B002C41BE /* AddDeckScreen.swift */; };
+		43AFCC902CCA6E06003A921D /* AddNewCategoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AFCC8F2CCA6E06003A921D /* AddNewCategoryScreen.swift */; };
 		43B8803C2CB555AA00F27A3B /* CardFrontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8803B2CB555AA00F27A3B /* CardFrontView.swift */; };
 		43B8803E2CB55D5A00F27A3B /* CardBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8803D2CB55D5A00F27A3B /* CardBackView.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		43A2DD532CB5195E002C41BE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		43A2DD552CB51B06002C41BE /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		43A2DD582CB51F2B002C41BE /* AddDeckScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeckScreen.swift; sourceTree = "<group>"; };
+		43AFCC8F2CCA6E06003A921D /* AddNewCategoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCategoryScreen.swift; sourceTree = "<group>"; };
 		43B8803B2CB555AA00F27A3B /* CardFrontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFrontView.swift; sourceTree = "<group>"; };
 		43B8803D2CB55D5A00F27A3B /* CardBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,14 +132,31 @@
 		43A2DD572CB51EF7002C41BE /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				43AFCC922CCA9B8D003A921D /* FlashCard */,
+				43AFCC912CCA9B6F003A921D /* Decks */,
 				43A2DD452CB517CF002C41BE /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		43AFCC912CCA9B6F003A921D /* Decks */ = {
+			isa = PBXGroup;
+			children = (
 				43A2DD532CB5195E002C41BE /* HomeScreen.swift */,
 				43A2DD582CB51F2B002C41BE /* AddDeckScreen.swift */,
+				43AFCC8F2CCA6E06003A921D /* AddNewCategoryScreen.swift */,
+			);
+			path = Decks;
+			sourceTree = "<group>";
+		};
+		43AFCC922CCA9B8D003A921D /* FlashCard */ = {
+			isa = PBXGroup;
+			children = (
 				43A2DD552CB51B06002C41BE /* QuizView.swift */,
 				43B8803B2CB555AA00F27A3B /* CardFrontView.swift */,
 				43B8803D2CB55D5A00F27A3B /* CardBackView.swift */,
 			);
-			path = Screens;
+			path = FlashCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +239,7 @@
 				4355EF782CC69BE7002CA697 /* AppPages.swift in Sources */,
 				43A2DD562CB51B06002C41BE /* QuizView.swift in Sources */,
 				43B8803C2CB555AA00F27A3B /* CardFrontView.swift in Sources */,
+				43AFCC902CCA6E06003A921D /* AddNewCategoryScreen.swift in Sources */,
 				43A2DD482CB517CF002C41BE /* Item.swift in Sources */,
 				43A2DD442CB517CF002C41BE /* FlashCardAppApp.swift in Sources */,
 				432016472CC7AD45001F3508 /* Category.swift in Sources */,

@@ -17,6 +17,7 @@ enum Sheet: String, Identifiable {
     }
     
     case addQuestion
+    case addNewCategory
 }
 
 enum FullScreenCover: String, Identifiable {
