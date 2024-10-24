@@ -17,13 +17,12 @@ struct QuizView: View {
     @State var questionNumber = 0
     
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
     
     var body: some View {
         VStack {
             ZStack {
-                CardFrontView(degree: $frontDegree, textContext: items[questionNumber].question)
-                CardBackView(degree: $backDegree, textContext: items[questionNumber].answer)
+//                CardFrontView(degree: $frontDegree, textContext: items[questionNumber].question)
+//                CardBackView(degree: $backDegree, textContext: items[questionNumber].answer)
             }
             .onTapGesture {
                 flipCard()
@@ -46,9 +45,9 @@ struct QuizView: View {
                         .foregroundStyle(.secondary)
                 }
                 
-                Text("Card \(questionNumber + 1) of \(items.count)")
+//                Text("Card \(questionNumber + 1) of \(items.count)")
                 
-                if questionNumber < (items.count - 1) {
+                if questionNumber < (4 - 1) {
                     Button(action: {
                         if !isFlipped {
                             flipCard()

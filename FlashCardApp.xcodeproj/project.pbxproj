@@ -14,7 +14,6 @@
 		4355EF782CC69BE7002CA697 /* AppPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4355EF772CC69BE7002CA697 /* AppPages.swift */; };
 		43A2DD442CB517CF002C41BE /* FlashCardAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A2DD432CB517CF002C41BE /* FlashCardAppApp.swift */; };
 		43A2DD462CB517CF002C41BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A2DD452CB517CF002C41BE /* ContentView.swift */; };
-		43A2DD482CB517CF002C41BE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A2DD472CB517CF002C41BE /* Item.swift */; };
 		43A2DD4A2CB517D0002C41BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A2DD492CB517D0002C41BE /* Assets.xcassets */; };
 		43A2DD4D2CB517D0002C41BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A2DD4C2CB517D0002C41BE /* Preview Assets.xcassets */; };
 		43A2DD542CB5195E002C41BE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A2DD532CB5195E002C41BE /* HomeScreen.swift */; };
@@ -34,7 +33,6 @@
 		43A2DD402CB517CF002C41BE /* FlashCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A2DD432CB517CF002C41BE /* FlashCardAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardAppApp.swift; sourceTree = "<group>"; };
 		43A2DD452CB517CF002C41BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		43A2DD472CB517CF002C41BE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		43A2DD492CB517D0002C41BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43A2DD4C2CB517D0002C41BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43A2DD532CB5195E002C41BE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 		432016452CC7ACE5001F3508 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				43A2DD472CB517CF002C41BE /* Item.swift */,
 				432016462CC7AD45001F3508 /* Category.swift */,
 			);
 			path = Models;
@@ -240,7 +237,6 @@
 				43A2DD562CB51B06002C41BE /* QuizView.swift in Sources */,
 				43B8803C2CB555AA00F27A3B /* CardFrontView.swift in Sources */,
 				43AFCC902CCA6E06003A921D /* AddNewCategoryScreen.swift in Sources */,
-				43A2DD482CB517CF002C41BE /* Item.swift in Sources */,
 				43A2DD442CB517CF002C41BE /* FlashCardAppApp.swift in Sources */,
 				432016472CC7AD45001F3508 /* Category.swift in Sources */,
 			);

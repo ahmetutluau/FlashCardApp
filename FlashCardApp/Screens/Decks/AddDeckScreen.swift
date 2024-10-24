@@ -17,7 +17,6 @@ struct AddDeckScreen: View {
     @EnvironmentObject private var coordinator: Coordinator
 
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
     @State var questionString = ""
     @State var answerString = ""
     @Environment(\.dismiss) var dismiss
@@ -87,7 +86,7 @@ struct AddDeckScreen: View {
                     if answerString != "" && questionString != "" {
                         Button(action: {
                             //save
-                            addItem()
+//                            addItem()
                             
                         }, label: {
                             Text("Save")
@@ -110,15 +109,15 @@ struct AddDeckScreen: View {
        
     // MARK: - Functions
     
-    private func addItem() {
-        withAnimation {
-            guard answerString != "" && questionString != "" else {return}
-            let newItem = Item(question: questionString,
-                               answer: answerString)
-            modelContext.insert(newItem)
-            dismiss()
-        }
-    }
+//    private func addItem() {
+//        withAnimation {
+//            guard answerString != "" && questionString != "" else {return}
+//            let newItem = Item(question: questionString,
+//                               answer: answerString)
+//            modelContext.insert(newItem)
+//            dismiss()
+//        }
+//    }
 }
 
 #Preview {
